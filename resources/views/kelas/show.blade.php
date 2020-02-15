@@ -10,7 +10,15 @@
                 <div class="card-body">
                  <div class="form-group">
                  <lable>Kelas</label>
-                 <input type="text" name="nama" value="{{$kelas->nama}}" class="form-control"readonly>
+                 <input type="text" name="kelas" value="{{$kelas->kelas}}" class="form-control"readonly>
+                 <div class="card-body">
+                 <div class="form-group">
+                 <lable>Daftar kelas</label>
+                 <ul>
+                 @foreach ($kelas->siswa as $data)
+                 <li>{{$data->nama}} - {{$data->nis}}</li>
+                 @endforeach
+                 </ul>
                  </div>
                  <div class="form-group">
                  <a href="{{url()->previous()}}" class="btn btn-primary">Kembali</a>

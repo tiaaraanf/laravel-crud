@@ -37,11 +37,17 @@
                      <a class="navbar-brand" 
                      href="{{route('kelas.index')}}">Daftar Kelas</a>
                       </li>
+
                       <li>
                      <a class="navbar-brand" 
                      href="{{route('mapel.index')}}">Daftar mapel</a>
                       </li>
-                      </ul>
+
+                      <li>
+                      <a class="navbar-brand" 
+                     href="{{route('siswa.index')}}">Daftar siswa</a>
+                      </li>
+
                       <li class="navbar-nav ml-auto">
                       @guest
                       <a class="nav-link" href="{{route('login')}}">{{__('login')}}</a>

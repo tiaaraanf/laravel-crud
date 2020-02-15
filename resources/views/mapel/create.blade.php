@@ -11,7 +11,7 @@
                  <form action="{{route('mapel.store')}}" method="post">
                  @csrf
                  <div class="form-group">
-                 <lable>mapel</label>
+                 <lable>mata pelajaran</label>
                  <input type="text" name="nama" class="form-control"required>
                  </div>
                  <div class="form-group">

@@ -52,7 +52,7 @@ class MapelController extends Controller
      * @param  \App\Mapel  $mapel
      * @return \Illuminate\Http\Response
      */
-    public function show(Mapel $mapel)
+    public function show($id)
     {
         $mapel = Mapel::findOrFail($id);
         return view('mapel.show',compact('mapel'));

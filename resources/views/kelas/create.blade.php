@@ -11,7 +11,7 @@
                  <form action="{{route('kelas.store')}}" method="post">
                  @csrf
                  <div class="form-group">
-                 <lable>kelas</label>
+                 <lable>nama</label>
                  <input type="text" name="nama" class="form-control"required>
                  </div>
                  <div class="form-group">
